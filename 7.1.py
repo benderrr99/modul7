@@ -23,6 +23,17 @@ for i in range(len(output1)):
         new_output.append(output1[i][j])
 
 new_output.pop(0)
+def chanche_symb():
+    elem = new_output[0]
+    symb = ''
+    if elem[0] == '*':
+        symb1 = symb + elem[1:]
+        return symb1
+    else:
+        symb1 = symb + elem
+        return symb1
+
+new_output[0] = chanche_symb()
 result = list(map(float, new_output))
 result = list(reversed(result))
 
