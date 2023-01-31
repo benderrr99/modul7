@@ -23,7 +23,7 @@ for i in range(len(output1)):
         new_output.append(output1[i][j])
 
 new_output.pop(0)
-def chanche_symb():
+def change_symb():
     elem = new_output[0]
     symb = ''
     if elem[0] == '*':
@@ -33,7 +33,7 @@ def chanche_symb():
         symb1 = symb + elem
         return symb1
 
-new_output[0] = chanche_symb()
+new_output[0] = change_symb()
 result = list(map(float, new_output))
 result = list(reversed(result))
 
